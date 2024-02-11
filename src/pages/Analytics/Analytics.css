@@ -1,0 +1,42 @@
+/* ChartContainer.css */
+
+.chart-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.chart-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.chart {
+  width: calc(50% - 10px);
+  /* 50% width with some space between charts */
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.chart h2 {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  visibility: hidden;
+}
+
+.chart:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .chart {
+    width: 100%;
+    /* Full width on smaller screens */
+  }
+}
